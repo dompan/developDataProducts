@@ -1,0 +1,33 @@
+---
+title: "Getting Started guide for mtcars Clustering App"
+author: "DP"
+date: "21/06/2015"
+output: html_document
+---
+
+This is the firs part of the Developing Data Products project course of the Coursera Data Science Specialization.  This file is intended to be the documentation of the Shiny Application.  
+  
+In this application we use mtcars; one of the most viewed dataset in this specialization.
+
+```{r}
+mtcars
+```
+
+You can see more details on this site <https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html>  
+Starting from two of the variables of the dataset:
+```{r}
+names(mtcars)
+```
+the goal of the apllication is to clusterize the cars.  
+  
+The application present itsels with a side panel where you can choose:  
+- The variables to be represented in the graph  
+- The number of clusters  
+
+![Side Panel](/home/leone/rwd/9/panel.png)  
+  
+In particular we need the number of clusters, because this is an input value of the **k-means** method; the algorithm used to perform the clusterization.In the picture below we can see an example of the result of the application. The graph shows also the centers of the clusters.
+
+![Resulting Graph](/home/leone/rwd/9/graph.png)
+
+
